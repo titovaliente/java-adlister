@@ -1,15 +1,17 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title><%= "some title" %></title>
-</head>
+    <title><%= "Tee-lister" %></title>
+    <%@ include file="partials/head.jsp" %>
 <body>
-    <c:if test="true">
-        <h1>Variable names should be very descriptive</h1>
-    </c:if>
-    <c:if test="false">
-        <h1>single letter variable names are good</h1>
-    </c:if>
+    <main role="main" class="container">
+
+        <div class="text-center">
+            <h1>T-Lister</h1>
+            <p class="lead">Fresh Tees everday.</p>
+            <button><a href="/login.jsp">Login</a></button>
+        </div>
+    </main><!-- /.container -->
+<%@ include file="partials/scripts.jsp" %>
 </body>
 </html>
