@@ -5,7 +5,7 @@
     String password = request.getParameter("password");
 
     if(request.getMethod().equalsIgnoreCase("post")) {
-        if(username.equals("admin") && password.equals("password")) {
+        if(username.equalsIgnoreCase("admin") && password.equals("password")) {
             response.sendRedirect("/profile.jsp");
         } else {
             response.sendRedirect("/login.jsp");
